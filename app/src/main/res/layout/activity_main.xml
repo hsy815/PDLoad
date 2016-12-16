@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hsy.pdload.MainActivity">
+
+
+    <com.hsy.pdload.view.PullDownLoadView
+        android:id="@+id/pullDownLoadView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.hsy.pdload.view.MyRecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.hsy.pdload.view.MyRecyclerView>
+    </com.hsy.pdload.view.PullDownLoadView>
+
+</RelativeLayout>
