@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.pdl.hsy.pdloading.R;
-import com.pdl.hsy.pdloading.util.MyViewHolder;
+import com.hsy.pdload.R;
+import com.hsy.pdload.util.MyViewHolder;
 
 import java.util.List;
 
