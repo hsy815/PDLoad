@@ -63,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
         ordinaryPDLView.ordinary_pdl_load_h.setImageResource(R.mipmap.loading_dian);
         //底部加载时旋转的图片
         ordinaryPDLView.ordinary_pdl_load_f.setImageResource(R.mipmap.loading);
+        //设置头部背景
+        ordinaryPDLView.LayoutHeader.setBackgroundResource(R.color.bg);
+        //设置底部背景
+        ordinaryPDLView.LayoutFooter.setBackgroundResource(R.color.bg);
         //旋转动画
         Animation operatingAnim = AnimationUtils.loadAnimation(MainActivity.this, R.anim.ordinary_anim);
         LinearInterpolator lin = new LinearInterpolator();

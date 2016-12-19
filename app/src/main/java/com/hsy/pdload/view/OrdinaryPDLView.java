@@ -47,7 +47,7 @@ public class OrdinaryPDLView extends ViewGroup {
     private int lastChildIndex;
     private Animation operatingAnim = null;
     //头部布局
-    private RelativeLayout LayoutHeader;
+    public RelativeLayout LayoutHeader;
     //头部textview
     private TextView pdl_tv_pull;
     //头部加载动画Linear
@@ -59,7 +59,7 @@ public class OrdinaryPDLView extends ViewGroup {
     //加载时文本
     public TextView ordinary_pdl_tv_h;
     //底部布局
-    private RelativeLayout LayoutFooter;
+    public RelativeLayout LayoutFooter;
     //底部textview
     private TextView pdl_tv_down;
     //底部加载动画Linear
@@ -160,7 +160,6 @@ public class OrdinaryPDLView extends ViewGroup {
     private void addFooter() {
         // 通过LayoutInflater获取从布局文件中获取footer的view对象
         LayoutFooter = (RelativeLayout) inflater.inflate(R.layout.ordinary_pdl_footer, null);
-        LayoutFooter.setBackgroundColor(Color.WHITE);
 
         // 上拉提示
         pdl_tv_down = (TextView) LayoutFooter.findViewById(R.id.pdl_tv_down);
@@ -188,7 +187,6 @@ public class OrdinaryPDLView extends ViewGroup {
     private void addHeader() {
         // 通过LayoutInflater获取从布局文件中获取header的view对象
         LayoutHeader = (RelativeLayout) inflater.inflate(R.layout.ordinary_pdl_header, null);
-        LayoutHeader.setBackgroundColor(Color.WHITE);
 
         // 获取上拉刷新的文字描述
         pdl_tv_pull = (TextView) LayoutHeader.findViewById(R.id.pdl_tv_pull);
